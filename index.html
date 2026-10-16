@@ -14,7 +14,7 @@
 <main class="wrap">
 <section class="hero" aria-labelledby="page-title">
 <div><div class="eyebrow">Daily intelligence brief</div><h1 id="page-title">ChatGPT 与 ChatGPT Ads<br>热点资讯面板</h1><p>聚合 OpenAI 官方公告与可信媒体报道，按日期、主题和影响看点整理。每日自动资讯会持续同步到这里。</p></div>
-<div class="stamp"><small>面板更新时间</small><strong id="updated-at">2026-10-15 09:10</strong><small>Asia/Shanghai</small></div>
+<div class="stamp"><small>面板更新时间</small><strong id="updated-at">2026-10-16 09:00</strong><small>Asia/Shanghai</small></div>
 </section>
 <section class="stats" aria-label="资讯概览"><div class="stat"><label>收录热点</label><strong id="count-all">0</strong></div><div class="stat"><label>最近 24 小时</label><strong id="count-day">0</strong></div><div class="stat"><label>ChatGPT Ads</label><strong id="count-ads">0</strong></div><div class="stat"><label>官方来源</label><strong id="count-official">0</strong></div></section>
 <section class="toolbar" aria-label="筛选资讯"><input id="search" type="search" placeholder="搜索标题、来源或关键词" aria-label="搜索资讯"><select id="category" aria-label="按主题筛选"><option value="all">全部主题</option><option value="product">产品与广告</option><option value="risk">安全与诉讼</option><option value="policy">监管与政策</option><option value="industry">行业趋势</option></select><select id="window" aria-label="按时间筛选"><option value="all">全部时间</option><option value="7">近 7 天</option><option value="30">近 30 天</option></select><span class="hint" id="result-hint" aria-live="polite"></span></section>
@@ -22,11 +22,120 @@
 <footer>来源以公开页面为准；涉及指控、诉讼或传闻的内容均按原报道表述，不代表已被最终裁定。自动更新任务会在每日资讯运行时同步此面板的数据。</footer>
 </main>
 <script id="stories-data" type="application/json">
-[{"date":"2026-10-13","time":"20:59","title":"FBI 逮捕 OpenAI 员工，涉嫌在办公室放置隐藏录音设备","summary":"TechCrunch 报道称，该员工被指控在会议室放置隐藏录音设备；FBI 表示，行动可能旨在获取与公司超级智能技术有关的敏感通信。案件仍属指控阶段。","takeaway":"内部安全、商业机密与员工使用聊天机器人辅助行为的风险受到关注。","category":"risk","label":"安全与调查","source":"TechCrunch","official":false,"url":"https://techcrunch.com/2026/10/13/fbi-arrests-openai-employee-accused-of-planting-hidden-recording-device-in-conference-room/"},{"date":"2026-10-13","time":"23:17","title":"媒体披露 OpenAI 员工涉嫌借助聊天机器人策划放置录音设备","summary":"WIRED 报道称，相关聊天机器人提示词显示，该工程师曾在设备被发现前几天讨论如何设置秘密监听设备。","takeaway":"企业应重新评估敏感场所、内部工具和模型使用记录的安全边界。","category":"risk","label":"安全与调查","source":"WIRED","official":false,"url":"https://www.wired.com/story/an-openai-employee-allegedly-used-a-chatbot-to-help-plant-a-recording-device-at-the-office/"},{"date":"2026-10-13","time":"20:36","title":"法官要求 OpenAI 在 Apple 商业机密案件中提交招聘资料","summary":"TechCrunch 报道称，联邦法官裁定 Apple 可查阅 OpenAI 涉及前 Apple 员工的面试资料、私人消息及关键人物证词。","takeaway":"AI 公司的人才流动、招聘流程和商业机密边界可能面临更严格的司法审查。","category":"risk","label":"诉讼与商业机密","source":"TechCrunch","official":false,"url":"https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/"},{"date":"2026-10-13","time":"19:35","title":"OpenAI 与 Anthropic 在英国议会听证会上支持加强监管","summary":"WIRED 报道称，两家公司代表与举报人、安全专家共同参加英国议会关于前沿 AI 风险与监管的听证。","takeaway":"模型公司开始更直接参与监管框架讨论，安全责任与行业规则仍是焦点。","category":"policy","label":"监管与政策","source":"WIRED","official":false,"url":"https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/"},{"date":"2026-10-11","time":"22:00","title":"语音 AI 尚未迎来自己的“ChatGPT 时刻”","summary":"TechCrunch 采访多位高管后指出，语音 AI 在上下文理解和持续可靠性方面仍有明显短板。","takeaway":"ChatGPT 形成的产品预期仍在影响其他 AI 赛道的成熟度判断。","category":"industry","label":"行业趋势","source":"TechCrunch","official":false,"url":"https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/"},{"date":"2026-10-05","time":"18:00","title":"OpenAI 公布 ChatGPT 新广告格式与衡量工具","summary":"OpenAI 介绍新的视觉广告格式，并扩展广告衡量、归因合作和品牌适配工具。","takeaway":"ChatGPT Ads 进入更完整的广告产品化阶段，广告主将更关注展示环境、衡量能力和品牌安全。","category":"product","label":"ChatGPT Ads","source":"OpenAI 官方","official":true,"url":"https://openai.com/index/new-chatgpt-ads-format-and-measurement"},{"date":"2026-10-09","time":"15:00","title":"Sophos 使用 OpenAI Daybreak 将威胁调查时间缩短 96%","summary":"OpenAI 客户案例称，Sophos 通过 Daybreak 自动化部分 MDR 案件，同时保留人工监督。","takeaway":"企业级 ChatGPT 与 OpenAI 工具的价值正从问答扩展到安全运营工作流。","category":"product","label":"企业应用","source":"OpenAI 官方","official":true,"url":"https://openai.com/index/sophos"},{"date":"2026-10-09","time":"15:00","title":"Asana 在浏览器测试中大幅降低模型成本","summary":"OpenAI 客户案例介绍 Asana 使用 GPT-6 系列与 Codex 优化浏览器代理测试的成本和速度。","takeaway":"模型分层、任务路由和代理效率成为企业部署 AI 的关键指标。","category":"product","label":"企业应用","source":"OpenAI 官方","official":true,"url":"https://openai.com/index/asana-browser-agent"}]
+[
+  {
+    "date": "2026-10-16",
+    "time": "06:43",
+    "title": "ChatGPT Chrome 扩展现在可以读取已打开的浏览器标签页",
+    "summary": "The Verge 报道称，ChatGPT 的 Chrome 扩展新增了读取用户已打开标签页的能力；用户需要在 ChatGPT 网页版或桌面版中标记 Chrome 后使用。",
+    "takeaway": "这会让 ChatGPT 更容易结合浏览器上下文工作，同时也提高了标签页内容授权、隐私边界和敏感信息管理的重要性。",
+    "category": "product",
+    "label": "产品更新",
+    "source": "The Verge",
+    "official": false,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs"
+  },
+  {
+    "date": "2026-10-13",
+    "time": "20:59",
+    "title": "FBI 逮捕 OpenAI 员工，涉嫌在办公室放置隐藏录音设备",
+    "summary": "TechCrunch 报道称，该员工被指控在会议室放置隐藏录音设备；FBI 表示，行动可能旨在获取与公司超级智能技术有关的敏感通信。案件仍属指控阶段。",
+    "takeaway": "内部安全、商业机密与员工使用聊天机器人辅助行为的风险受到关注。",
+    "category": "risk",
+    "label": "安全与调查",
+    "source": "TechCrunch",
+    "official": false,
+    "url": "https://techcrunch.com/2026/10/13/fbi-arrests-openai-employee-accused-of-planting-hidden-recording-device-in-conference-room/"
+  },
+  {
+    "date": "2026-10-13",
+    "time": "23:17",
+    "title": "媒体披露 OpenAI 员工涉嫌借助聊天机器人策划放置录音设备",
+    "summary": "WIRED 报道称，相关聊天机器人提示词显示，该工程师曾在设备被发现前几天讨论如何设置秘密监听设备。",
+    "takeaway": "企业应重新评估敏感场所、内部工具和模型使用记录的安全边界。",
+    "category": "risk",
+    "label": "安全与调查",
+    "source": "WIRED",
+    "official": false,
+    "url": "https://www.wired.com/story/an-openai-employee-allegedly-used-a-chatbot-to-help-plant-a-recording-device-at-the-office/"
+  },
+  {
+    "date": "2026-10-13",
+    "time": "20:36",
+    "title": "法官要求 OpenAI 在 Apple 商业机密案件中提交招聘资料",
+    "summary": "TechCrunch 报道称，联邦法官裁定 Apple 可查阅 OpenAI 涉及前 Apple 员工的面试资料、私人消息及关键人物证词。",
+    "takeaway": "AI 公司的人才流动、招聘流程和商业机密边界可能面临更严格的司法审查。",
+    "category": "risk",
+    "label": "诉讼与商业机密",
+    "source": "TechCrunch",
+    "official": false,
+    "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/"
+  },
+  {
+    "date": "2026-10-13",
+    "time": "19:35",
+    "title": "OpenAI 与 Anthropic 在英国议会听证会上支持加强监管",
+    "summary": "WIRED 报道称，两家公司代表与举报人、安全专家共同参加英国议会关于前沿 AI 风险与监管的听证。",
+    "takeaway": "模型公司开始更直接参与监管框架讨论，安全责任与行业规则仍是焦点。",
+    "category": "policy",
+    "label": "监管与政策",
+    "source": "WIRED",
+    "official": false,
+    "url": "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/"
+  },
+  {
+    "date": "2026-10-11",
+    "time": "22:00",
+    "title": "语音 AI 尚未迎来自己的“ChatGPT 时刻”",
+    "summary": "TechCrunch 采访多位高管后指出，语音 AI 在上下文理解和持续可靠性方面仍有明显短板。",
+    "takeaway": "ChatGPT 形成的产品预期仍在影响其他 AI 赛道的成熟度判断。",
+    "category": "industry",
+    "label": "行业趋势",
+    "source": "TechCrunch",
+    "official": false,
+    "url": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/"
+  },
+  {
+    "date": "2026-10-05",
+    "time": "18:00",
+    "title": "OpenAI 公布 ChatGPT 新广告格式与衡量工具",
+    "summary": "OpenAI 介绍新的视觉广告格式，并扩展广告衡量、归因合作和品牌适配工具。",
+    "takeaway": "ChatGPT Ads 进入更完整的广告产品化阶段，广告主将更关注展示环境、衡量能力和品牌安全。",
+    "category": "product",
+    "label": "ChatGPT Ads",
+    "source": "OpenAI 官方",
+    "official": true,
+    "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement"
+  },
+  {
+    "date": "2026-10-09",
+    "time": "15:00",
+    "title": "Sophos 使用 OpenAI Daybreak 将威胁调查时间缩短 96%",
+    "summary": "OpenAI 客户案例称，Sophos 通过 Daybreak 自动化部分 MDR 案件，同时保留人工监督。",
+    "takeaway": "企业级 ChatGPT 与 OpenAI 工具的价值正从问答扩展到安全运营工作流。",
+    "category": "product",
+    "label": "企业应用",
+    "source": "OpenAI 官方",
+    "official": true,
+    "url": "https://openai.com/index/sophos"
+  },
+  {
+    "date": "2026-10-09",
+    "time": "15:00",
+    "title": "Asana 在浏览器测试中大幅降低模型成本",
+    "summary": "OpenAI 客户案例介绍 Asana 使用 GPT-6 系列与 Codex 优化浏览器代理测试的成本和速度。",
+    "takeaway": "模型分层、任务路由和代理效率成为企业部署 AI 的关键指标。",
+    "category": "product",
+    "label": "企业应用",
+    "source": "OpenAI 官方",
+    "official": true,
+    "url": "https://openai.com/index/asana-browser-agent"
+  }
+]
 </script>
 <script>
 const data=JSON.parse(document.getElementById('stories-data').textContent);
-const $=id=>document.getElementById(id); const now=new Date('2026-10-15T09:00:00+08:00');
+const $=id=>document.getElementById(id); const now=new Date('2026-10-16T09:00:00+08:00');
 $('count-all').textContent=data.length; $('count-day').textContent=data.filter(x=>(now-new Date(x.date+'T'+(x.time||'00:00')+':00+08:00'))<=86400000).length; $('count-ads').textContent=data.filter(x=>x.label==='ChatGPT Ads').length; $('count-official').textContent=data.filter(x=>x.official).length;
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function render(){const q=$('search').value.trim().toLowerCase(), cat=$('category').value, days=$('window').value; const list=data.filter(x=>{const hay=(x.title+' '+x.summary+' '+x.source+' '+x.label).toLowerCase(); const age=(now-new Date(x.date+'T'+(x.time||'00:00')+':00+08:00'))/86400000; return (!q||hay.includes(q))&&(cat==='all'||x.category===cat)&&(days==='all'||age<=Number(days)+1)}).sort((a,b)=>(b.date+b.time).localeCompare(a.date+a.time)); $('result-hint').textContent=`显示 ${list.length} 条`; $('feed').innerHTML=list.length?list.map(x=>`<article class="story"><div class="story-date"><strong>${esc(x.date)}</strong>${esc(x.time||'')}（上海）</div><div class="story-main"><div class="meta"><span class="tag ${x.category}">${esc(x.label)}</span><span class="source">${esc(x.source)}${x.official?' · 官方':''}</span></div><h3><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></h3><p>${esc(x.summary)}</p><div class="takeaway"><b>影响 / 看点：</b>${esc(x.takeaway)}</div></div></article>`).join(''):'<div class="empty">没有符合条件的资讯。</div>'}
